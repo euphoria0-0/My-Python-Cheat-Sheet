@@ -5,6 +5,7 @@ def save_model(model):
     		f.write(model_json)
 	model.save_weights(model_path+model_name+'.h5')
 
-# save tokenizer(tokenizer):
+# save tokenizer
+def save tokenizer(tokenizer):
 	with open(path+'tokenizer.pickle', 'wb') as f:
     		pickle.dump(tokenizer, f, protocol = pickle.HIGHEST_PROTOCOL)
