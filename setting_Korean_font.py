@@ -10,7 +10,9 @@ import matplotlib as mpl  # 기본 설정 만지는 용도
 import matplotlib.pyplot as plt  # 그래프 그리는 용도
 import matplotlib.font_manager as fm  # 폰트 관련 용도
 # 3. 글꼴 설정
-path = '/usr/share/fonts/truetype/nanum/NanumSquareR.ttf'  # 설치된 나눔글꼴중 원하는 녀석의 전체 경로를 가져오자
+# 글꼴 경로 가져오기
+path = '/usr/share/fonts/truetype/nanum/NanumSquareR.ttf'  # font 나눔스퀘어 for Colab Notebooks
+path = 'C:/Windows/Fonts/malgun.ttf' # font 맑은 고딕 for Windows
 font_name = fm.FontProperties(fname=path, size=10).get_name()
 print(font_name)
 plt.rc('font', family=font_name)
