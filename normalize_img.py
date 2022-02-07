@@ -1,5 +1,6 @@
 import os
 import random
+from tqdm import tqdm
 
 import numpy as np
 import torchvision.datasets as D
@@ -7,9 +8,6 @@ import torchvision.transforms as T
 from torch.utils.data import DataLoader, Subset
 import torch
 
-data = 'AwA2'
-data_dir = 'D:/data/'
-save_dir = 'D:/cifar100_AwA2/'
 
 def get_img_mean(Dataset):
     loader = DataLoader(
